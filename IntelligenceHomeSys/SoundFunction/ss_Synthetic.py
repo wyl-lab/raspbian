@@ -28,7 +28,7 @@ SECRET_KEY = 'Lk3oDN6Y7GGBZWB4BpNM7OpbOGSNvkeV'
 
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
-content = "你好呀，听说今天的蓬莱的天气情况已送达，请注查收！";
+content = "Tempreture 9° / 16° 天气情况: 阵雨 温   度 : 9° / 16° 风   向 : 东北风 风   速 : 3-4级 空气质量: 52良！";
 
 cuid = 'raspberry'
 
