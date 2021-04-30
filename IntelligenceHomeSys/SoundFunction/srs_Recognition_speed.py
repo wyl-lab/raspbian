@@ -18,7 +18,7 @@ API_KEY = '0Wv3AGwPg5Y4Sa8GzB09qTGw'
 SECRET_KEY = 'Lk3oDN6Y7GGBZWB4BpNM7OpbOGSNvkeV'
 
 # 需要识别的文件
-AUDIO_FILE = './16k.pcm'  # 只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
+AUDIO_FILE= './voice/test.pcm'  # 只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
 # 文件格式
 FORMAT = AUDIO_FILE[-3:]  # 文件后缀只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
 CUID = 'raspbian'
@@ -102,7 +102,7 @@ def speechRecognition_Speed():
     #print ("content['err_msg']: ", content['err_msg'])
     usefulData = (content['result'])[0]
     return usefulData
-    
+
 
 if __name__  == '__main__':
     sr_result = speechRecognition_Speed()
@@ -117,6 +117,10 @@ if __name__  == '__main__':
     4、开关灯
     5、
     """
+    if("天气" in sr_result):
+        print("天气程序调取")
+    
+        
     with open("result.txt","w") as of:
         of.write(sr_result)
 

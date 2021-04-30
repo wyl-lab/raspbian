@@ -14,3 +14,5 @@ read -p "autoSendPlayEmail.sh has finished!"
 
 # 00 7 * * * /home/pi/IntelligenceHomeSys/SoundFunction/autoSend&PlayEmail.sh
 # 30 16 * * * /home/pi/IntelligenceHomeSys/SoundFunction/autoSend&PlayEmail.sh
+
+
