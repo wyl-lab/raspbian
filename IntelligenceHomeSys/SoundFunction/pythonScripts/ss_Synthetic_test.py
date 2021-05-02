@@ -43,7 +43,7 @@ result  = client.synthesis(content, 'zh', 1, {
 # 识别正确返回语音二进制 错误则返回dict 参照下面错误码
 if not isinstance(result, dict):
     print("\n准备生成MP3音频格式文件")
-    with open('audio1.mp3', 'wb') as f:
+    with open('/home/pi/IntelligenceHomeSys/SoundFunction/audio1.mp3', 'wb') as f:
         f.write(result)
     print("音频文件生成完毕")
 

@@ -121,7 +121,7 @@ if __name__  == '__main__':
         print("天气程序调取")
     
         
-    with open("result.txt","w") as of:
+    with open("/home/pi/IntelligenceHomeSys/SoundFunction/result.txt","w") as of:
         of.write(sr_result)
 
         

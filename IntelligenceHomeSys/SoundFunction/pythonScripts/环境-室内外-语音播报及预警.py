@@ -201,7 +201,7 @@ def send_email(recipientAddrs, Subject, content, attachmentName):
         message.attach(txt)       
      
         # 添加附件
-        part = MIMEApplication(open(attachmentName,'rb').read())
+        part = MIMEApplication(open("/home/pi/IntelligenceHomeSys/SoundFunction/"+attachmentName,'rb').read())
         part.add_header('Content-Disposition', 'attachment', filename=attachmentName )
         message.attach(part)
 
@@ -281,7 +281,7 @@ def speechSynthesis(content, attachmentName):
         # 识别正确返回语音二进制 错误则返回dict 参照下面错误码
         if not isinstance(voiceConfig, dict):
                 #print("\n准备生成MP3音频格式文件")
-                with open(attachmentName, 'wb') as f:
+                with open("/home/pi/IntelligenceHomeSys/SoundFunction/"+attachmentName, 'wb') as f:
                         f.write(voiceConfig)
                 print("音频文件生成完毕")
         else:

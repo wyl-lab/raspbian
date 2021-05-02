@@ -10,4 +10,5 @@ sudo arecord -D hw:2,0 -d 5 -f cd -r 44100 -c 1 -t wav voice/test.wav
 ffmpeg -y -i voice/test.wav -acodec pcm_s16le -f s16le -ac 1 -ar 16000 voice/test.pcm
 
 # upload and recognition
-python3 /home/pi/IntelligenceHomeSys/SoundFunction/srs_Recognition_speed.py
+python3 /home/pi/IntelligenceHomeSys/SoundFunction/pythonScripts/srs_Recognition_speed.py
+

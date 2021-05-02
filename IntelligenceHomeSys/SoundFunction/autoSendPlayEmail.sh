@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # crawler and send
-python3 /home/pi/IntelligenceHomeSys/SoundFunction/环境-语音播报.py
+python3 /home/pi/IntelligenceHomeSys/SoundFunction/pythonScripts/环境-语音播报.py
 
 #play local
 omxplayer -p -o hdmi /home/pi/IntelligenceHomeSys/SoundFunction/syntheticVoice.mp3
